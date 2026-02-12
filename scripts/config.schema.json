@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["project", "paths", "pipeline", "validation"],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"}
+      }
+    },
+    "paths": {
+      "type": "object",
+      "required": ["data_dir", "models_dir", "scripts_dir", "outputs_dir", "notebooks_dir"],
+      "properties": {
+        "data_dir": {"type": "string"},
+        "models_dir": {"type": "string"},
+        "scripts_dir": {"type": "string"},
+        "outputs_dir": {"type": "string"},
+        "notebooks_dir": {"type": "string"}
+      }
+    },
+    "pipeline": {
+      "type": "object",
+      "required": ["phases"],
+      "properties": {
+        "phases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "script_dir"],
+            "properties": {
+              "id": {"type": "integer", "minimum": 1},
+              "name": {"type": "string"},
+              "script_dir": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["config_schema"],
+      "properties": {
+        "config_schema": {"type": "string"}
+      }
+    }
+  }
+}

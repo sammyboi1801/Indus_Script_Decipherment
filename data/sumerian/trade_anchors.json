@@ -1,0 +1,35 @@
+{
+  "dataset": "sumerian_trade_anchors",
+  "version": "0.1.0",
+  "last_updated": "2026-02-11",
+  "anchors": [
+    {
+      "id": "TA-001",
+      "term": "gu2",
+      "gloss": "neck-yoke or carrying implement",
+      "domain": "transport",
+      "confidence": 0.63
+    },
+    {
+      "id": "TA-002",
+      "term": "gan2",
+      "gloss": "field plot unit used in administrative tallies",
+      "domain": "land-accounting",
+      "confidence": 0.74
+    },
+    {
+      "id": "TA-003",
+      "term": "ma-na",
+      "gloss": "mina weight standard",
+      "domain": "weights-and-measures",
+      "confidence": 0.89
+    },
+    {
+      "id": "TA-004",
+      "term": "guru7",
+      "gloss": "storage silo or granary context marker",
+      "domain": "grain-storage",
+      "confidence": 0.7
+    }
+  ]
+}

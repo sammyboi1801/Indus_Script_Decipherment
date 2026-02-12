@@ -1,0 +1,16 @@
+{
+  "M-029": {
+    "astronomical_motifs": [
+      "star"
+    ],
+    "confidence": 0.92,
+    "inscription_id": "M-029",
+    "motif_density": 0.41,
+    "primary_animal": "unicorn",
+    "seal_condition": "clear",
+    "secondary_animals": [
+      "fish"
+    ],
+    "water_motifs_present": true
+  }
+}

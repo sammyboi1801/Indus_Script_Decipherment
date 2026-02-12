@@ -1,0 +1,34 @@
+project:
+  name: Indus_Script_Decipherment
+  version: 0.1.0
+
+paths:
+  data_dir: data
+  models_dir: models
+  scripts_dir: scripts
+  outputs_dir: outputs
+  notebooks_dir: notebooks
+
+pipeline:
+  phases:
+    - id: 1
+      name: data_collection
+      script_dir: scripts/01_data_collection
+    - id: 2
+      name: preprocessing
+      script_dir: scripts/02_preprocessing
+    - id: 3
+      name: feature_engineering
+      script_dir: scripts/03_feature_engineering
+    - id: 4
+      name: modeling
+      script_dir: scripts/04_modeling
+    - id: 5
+      name: decipherment
+      script_dir: scripts/05_decipherment
+    - id: 6
+      name: evaluation
+      script_dir: scripts/06_evaluation
+
+validation:
+  config_schema: scripts/config.schema.json

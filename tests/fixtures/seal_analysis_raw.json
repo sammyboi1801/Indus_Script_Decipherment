@@ -1,0 +1,11 @@
+{
+  "M-101": {
+    "celestial_symbols": ["crescent"],
+    "confidence": 0.81,
+    "dominant_animal": "zebu",
+    "has_water": false,
+    "motif_density": 0.27,
+    "seal_condition": "worn",
+    "secondary_animals": ["bird"]
+  }
+}

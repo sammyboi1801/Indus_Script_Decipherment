@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-data-json
+        name: Validate JSON files in data/
+        entry: python3 scripts/01_data_collection/validate_json.py
+        language: system
+        pass_filenames: false

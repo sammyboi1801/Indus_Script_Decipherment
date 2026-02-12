@@ -1,0 +1,22 @@
+name: Validate data JSON
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate JSON files
+        run: python3 scripts/01_data_collection/validate_json.py
